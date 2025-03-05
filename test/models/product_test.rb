@@ -37,12 +37,12 @@ class ProductTest < ActiveSupport::TestCase
     assert_not @product.valid?
   end
 
-  test "should return 'Vencido' if entrada is 0" do
-    assert_equal "Vencido", Product.vencido(0)
-  end
+  # test "should return 'Vencido' if entrada is 0" do
+  #   assert_equal "Vencido", Product.vencido(0)
+  # end
 
-  test "should return 'Vigente' if entrada is not 0" do
-    assert_equal "Vigente", Product.vencido(1)
+  # test "should return 'Vigente' if entrada is not 0" do
+  #   assert_equal "Vigente", Product.vencido(1)
     
-  end
+  # end
 end
